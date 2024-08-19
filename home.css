@@ -1,0 +1,169 @@
+/* Générale */
+*{
+    background-color: rgb(19, 14, 10);
+    color: rgb( 200 , 200 , 200);
+    font-family: "Merriweather";    
+}
+body{
+    justify-self: center;
+}
+#canvas {
+    border: solid 2px rgb( 200 , 200 , 200);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: -1;
+}
+header{
+    position: absolute;
+    background: transparent;
+    letter-spacing: 0.4em;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+}
+footer {
+    position: absolute;
+    background: transparent;
+    bottom: 0%;
+    margin-bottom: 0.5em;
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: flex;
+    align-items: center;
+}
+footer .img {
+    background: transparent;
+    margin-bottom: 0.5em;
+}
+footer .txt {
+    background: transparent;
+    margin-bottom: 0.75em;
+    margin-right: 8em;
+    margin-left: 0.5em;
+    white-space: nowrap;
+}
+footer .txt a {
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: 250;
+    text-decoration: none;
+    background: transparent;  
+    letter-spacing: 0.15em;
+}
+footer .txt a:hover {
+    text-decoration: none;
+    color: dimgray;
+}
+
+/* Titre */
+h1{
+    background: transparent;
+    font-size: 3.125em;
+    font-style: normal;
+    font-weight: 250;
+    margin-bottom: 0em;
+    margin-left: 0.5em;
+}
+h2{
+    margin-top: 0em;
+    margin-left: 1.563em;
+    font-size: 0.938em;
+    font-style: normal;
+    font-weight: 250;
+    background: transparent;
+}
+
+/* Menu */
+nav.menu{
+    background: transparent;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+}
+nav.menu ul {
+    background: transparent;
+    padding: 0;
+    margin: 0; 
+}
+nav.menu ul li{
+    background: transparent;
+    list-style-type: none;
+    margin: 0.375em;
+}
+nav.menu ul li a{
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: 250;
+    text-decoration: none;
+    background: transparent;  
+    letter-spacing: 0.15em;
+}
+nav.menu ul li a.courant{
+    color: dimgrey;
+}
+nav.menu ul li a:hover{
+    text-decoration: none;
+    color: dimgray;
+    /* cursor: default; */
+}
+
+/* Présentation */
+main{
+    background: transparent;
+    position: absolute;
+    bottom : 10%;
+    right: 5%;
+    width: auto;
+    max-width: 20em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.presentation{
+    background: transparent;
+    margin: 2.5em;
+}
+.presentation p{
+    background: transparent;
+    font-size: 0.75em;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    padding: 0.156em;
+    font-weight: lighter;
+}
+
+/* Formation */
+#main {
+    background: transparent;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform:translate(0%,-50%);
+    max-width: 22em;
+}
+.box {
+    border: solid 2px rgb( 200 , 200 , 200);
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 20px;
+}
+.box .date {
+    font-style: italic;
+    font-size: small;
+}
+.box .intitule {
+    font-size: larger;
+    font-weight: bold;
+}
+.box .employeur {
+    font-size: small;
+}
+.box .consiste {
+    font-size: 0.75em;
+}
+.box .date, .box .intitule, .box .employeur{
+    margin: 0.5em 0;
+}
